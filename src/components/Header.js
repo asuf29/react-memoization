@@ -1,8 +1,8 @@
 import React from "react";
 
-function Header() {
+function Header({ number }) {
   console.log("Header Component Re-rendered!");
-  return <div>Header</div>;
+  return <div>Header - {number}</div>;
 }
 
 export default React.memo(Header);

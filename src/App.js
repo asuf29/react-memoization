@@ -6,7 +6,7 @@ function App() {
   const [number, setNumber] = useState(0);
   return (
     <div className="App">
-      <Header />
+      <Header number={number < 5 ? 0 : number} />
 
       <hr />
 
