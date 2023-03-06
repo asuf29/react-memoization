@@ -68,12 +68,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header increment={() => setNumber(number + 1)} />
 
       <hr />
 
       <h1>{number}</h1>
-      <button onClick={() => setNumber(number + 1)}>Click</button>
 
       <br />
       <br />
